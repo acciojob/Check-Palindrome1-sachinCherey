@@ -15,7 +15,8 @@ function palindrome(str){
 	}
 	else{
 		let a1=str;
-		let b1=str.split("").reverse().join("");
+		a1.toLowerCase();
+		let b1=str.split("").reverse().join("").toLowerCase();
 		if(a1==b1)return true;
 	}
    return false;
